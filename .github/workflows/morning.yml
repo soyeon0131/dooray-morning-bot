@@ -14,5 +14,5 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
-          -d '{"text": "재국님 본사신가요?"}' \
+          -d '{"text": "재국님, 본사신가요?"}' \
           "https://gravity.dooray.com/services/2592578758829202186/4326990432273056233/WYgU-6nIR_SI7qrotizmwQ"

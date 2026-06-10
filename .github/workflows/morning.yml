@@ -1,0 +1,18 @@
+name: Dooray Morning Bot
+
+on:
+  schedule:
+    # 세계 표준시(UTC) 기준이라 한국 시간 9시는 '0 0 * * *' (새벽 0시)로 입력합니다.
+    - cron: '0 0 * * *'
+  workflow_dispatch: # (선택) 언제든 수동으로 잘 가나 테스트해볼 수 있는 버튼을 만듭니다.
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Morning Greeting to Dooray
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{"text": "재국님 본사신가요?"}' \
+          "https://gravity.dooray.com/services/2592578758829202186/4326990432273056233/WYgU-6nIR_SI7qrotizmwQ"

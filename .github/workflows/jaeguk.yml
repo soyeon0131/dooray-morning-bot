@@ -1,0 +1,18 @@
+name: Jaeguk Morning Bot
+
+on:
+  schedule:
+    # 한국 시간(KST) 오전 10시 33분에 작동합니다. (세계 표준시 UTC 기준 1시 33분)
+    - cron: '33 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Morning Greeting to Dooray
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{"text": "안녕하세요 김재국입니다☀️"}' \
+          "https://gravity.dooray.com/services/2592578758829202186/4326990432273056233/WYgU-6nIR_SI7qrotizmwQ"

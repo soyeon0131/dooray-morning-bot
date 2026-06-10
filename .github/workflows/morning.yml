@@ -2,9 +2,9 @@ name: Dooray Morning Bot
 
 on:
   schedule:
-    # 세계 표준시(UTC) 기준이라 한국 시간 9시는 '0 0 * * *' (새벽 0시)로 입력합니다.
-    - cron: '0 0 * * *'
-  workflow_dispatch: # (선택) 언제든 수동으로 잘 가나 테스트해볼 수 있는 버튼을 만듭니다.
+    # 한국 시간 오전 9시 2분에 맞춰 실행됩니다.
+    - cron: '2 0 * * *'
+  workflow_dispatch:
 
 jobs:
   send-message:

@@ -15,4 +15,4 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d '{"text": "안녕하세요 김재국입니다☀️"}' \
-          "https://gravity.dooray.com/services/2592578758829202186/4326990432273056233/WYgU-6nIR_SI7qrotizmwQ"
+          "https://gravity.dooray.com/services/2592578758829202186/4341446604200958067/tlq4f8UTS2e4LwBdra7BVA"

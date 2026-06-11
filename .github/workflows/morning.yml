@@ -2,8 +2,8 @@ name: Dooray Morning Bot
 
 on:
   schedule:
-    # 한국 시간 오전 9시 46분 (세계 표준시 UTC 0시 46분)
-    - cron: '46 0 * * *'
+    # 한국 시간 오전 10시 05분 실행 (영국 시간 UTC 1시 05분)
+    - cron: '5 1 * * *'
   workflow_dispatch:
 
 jobs:

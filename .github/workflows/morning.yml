@@ -2,8 +2,9 @@ name: Dooray Morning Bot
 
 on:
   schedule:
-    # 한국 시간 오전 9시 2분에 맞춰 실행됩니다.
-- cron: '15 0 * * *'
+    # 한국 시간 오전 8시 45분으로 설정 (세계 표준시 23시 45분)
+    # 깃허브가 게으름을 피워도 오전 9시~9시 5분 사이에는 무조건 도착하게 만듭니다.
+    - cron: '45 23 * * *'
   workflow_dispatch:
 
 jobs:
